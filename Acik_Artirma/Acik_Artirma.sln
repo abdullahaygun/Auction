@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acik_Artirma", "Acik_Artirma\Acik_Artirma.csproj", "{A24FDB1B-2212-4E66-AF4A-EB6B20ADB030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A24FDB1B-2212-4E66-AF4A-EB6B20ADB030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24FDB1B-2212-4E66-AF4A-EB6B20ADB030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24FDB1B-2212-4E66-AF4A-EB6B20ADB030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24FDB1B-2212-4E66-AF4A-EB6B20ADB030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D94C6028-B2A2-473A-A956-C8F80D0368FF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+1) ".\Acik_Artirma\Acik_Artirma\Acik_Artirma\Database" klasörü içerisindeki .bak uzantılı Veritabanı yedeğini MSSMS 'de Database klasörüne sağ tıklayarak "Restore Databse"
+   dedikten sonra yedeklemiş olduğum Databaseyi seçerek projenin sorunsuz çalışması sağlanabilecektir.
+
+2) Projenin ana çalışma sayfası "Login.aspx" dir. Bir sorun olursa bu sayfadan çalıştırılması gereklidir.
+
+3) Admin Girişi için:
+   Kullanıcı Adı: admin1
+   Şifre: adin123A
+    
+   User girişi için:
+   Kullanıcı Adı: userr1
+   Şifre: 1111qQ
+
+
+~185541013 - Abdullah AYGÜN~

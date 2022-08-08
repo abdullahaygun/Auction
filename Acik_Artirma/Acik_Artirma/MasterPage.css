@@ -1,0 +1,135 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.genel {
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    position:unset !important;
+}
+
+.Default li:nth-child(n+1){
+    float:right !important;
+}
+
+#nav {
+    height: 35px;
+    background-color: #186e76;
+     
+}
+
+    #nav ul {
+        list-style-type: none;
+        z-index: 1 !important;
+    }
+
+        #nav ul div li {
+            background-color: #ba313e;
+            /*border: solid 1px white;*/
+            width: 120px;
+            height: 35px;
+            text-align: center;
+            line-height: 35px;
+            float: left;
+            position: relative;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            font-variant-caps: small-caps;
+        }
+
+            #nav ul div li a {
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                
+            }
+
+
+                #nav ul div li a img {
+                    width: 12px;
+                    margin-left: 10px;
+                }
+
+                #nav ul div li a:hover {
+                    background-color: #ff6a00;
+                    color: #fff;
+                    border-radius: 10px;
+
+                }
+
+        #nav ul div ul {
+            position: absolute;
+            display: none;
+            
+        }
+
+        #nav ul div li > ul li {
+            background-color: #00ff21;
+            color: black;
+            /*border: solid 1px white;*/
+            border-radius: 10px;
+            font-size: 12px !important;
+        }
+
+        #nav ul div li:hover > ul {
+            display: block;
+            border-radius: 10px;
+        }
+
+.Avatar {
+    display: inline-flex !important;
+    width: max-content !important;
+    float: right !important;
+
+}
+
+.Avatar span{
+    position:relative !important;
+    top:-11px !important;
+}
+
+.Avatar{
+    font-variant-caps:normal !important;
+}
+
+    .Avatar ul {
+        top: 35px;
+        display: none !important;
+        position: absolute !important;
+        width: 100% !important;
+    }
+
+        .Avatar ul li {
+            width: 100% !important;
+        }
+
+    .Avatar:hover > ul {
+        display: inline-block !important;
+    }
+
+.AvatarImage {
+    border-radius: 50px;
+    width: 35px !important;
+    height: 35px !important;
+    top:0px !important;
+    position:relative;
+}
+
+.content {
+    height: 90vh;
+    background-color: #9ee3d5;
+}
+
+.labels {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footer {
+    height: 35px;
+    background-color: bisque;
+}

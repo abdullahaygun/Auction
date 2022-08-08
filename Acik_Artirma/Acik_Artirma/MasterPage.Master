@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="Acik_Artirma.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="MasterPage.css" rel="stylesheet" />
+    <link href="tablo.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="genel">
+            <div id="nav">
+                <ul>
+                    <div class="Default">
+                        <%--<li><a href="Auction.aspx">Açık Artırma</a></li>--%>
+                        <li><a href="Register.aspx">Kayıt Ol</a></li>
+                        <li><a href="Login.aspx">Giriş Yap</a></li>
+                    </div>
+
+
+                    <div class="User">
+                        <li><a href="Auction.aspx">Açık Artırma</a></li>
+                        <li><a href="#">Ürünlerim <span>
+                            <img src="../arrow.png" /></span></a>
+                            <ul>
+                                <li><a href="ShowProductClient.aspx">Görüntüle</a></li>
+                                <li><a href="AddProductClient.aspx">Ekle</a></li>
+                                <li><a href="UpdateProductClient.aspx">Güncelle</a></li>
+                                <li><a href="DeleteProductClient.aspx">Sil</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="UserPara.aspx">Para Yükle</a></li>
+                        <li><a href="Iletisim.aspx">İletişim</a></li>
+                        <li class="Avatar"><a href="#">
+                            <asp:Label CssClass="AvatarLabel" ID="lblavataruser" runat="server" Text="Hoşgeldiniz, "></asp:Label>
+                            <asp:Image CssClass="AvatarImage" ID="useravatar" runat="server" ></asp:Image>
+                        </a>
+                            <ul>
+                                <li><a href="UserProfile.aspx">Profil</a></li>
+                                <li><a href="Default.aspx" onclick="Cikis">Çıkış</a></li>
+                            </ul>
+                        </li>
+                    </div>
+
+
+                    <div class="Admin">
+
+                        <li><a href="Auction.aspx">Açık Artırma</a></li>
+
+                        <li><a href="AdminOnay.aspx">Onaylama</a></li>
+
+                        <li><a href="#">Ürünler <span>
+                            <img src="../arrow.png" /></span></a>
+                            <ul>
+                                <li><a href="#">Görüntüle</a></li>
+                                <li><a href="AddProduct.aspx">Ekle</a></li>
+                                <li><a href="#">Güncelle</a></li>
+                                <li><a href="#">Sil</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="Admin_CRUD_User.aspx">Müşteriler <span>
+                        </li>
+
+                        <li><a href="AdminMesaj.aspx">Mesajlar</a></li>
+
+                        <li class="Avatar"><a href="#">
+                            <asp:Label CssClass="AvatarLabel" ID="lblAvatarAdmin" runat="server" Text="Hoşgeldiniz, -"></asp:Label>
+                            <asp:Image CssClass="AvatarImage" ID="AdminAvatar" runat="server" src="../avatar.png"></asp:Image>
+                        </a>
+                            <ul>
+                                <li><a href="#">Profil</a></li>
+                                <li><a href="Default.aspx" onclick="Cikis">Çıkış</a></li>
+                            </ul>
+                        </li>
+                    </div>
+
+
+                </ul>
+            </div>
+
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+            <div class="footer">Copyright 2021</div>
+
+        </div>
+
+    </form>
+</body>
+</html>

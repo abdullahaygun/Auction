@@ -1,0 +1,186 @@
+﻿html {
+    background: rgba(146, 148, 248, 0.4);
+}
+
+.content {
+    background: url(Images/wallpapers/arkaPlan.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+    .form__group:hover {
+        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    }
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+    .form__field::placeholder {
+        color: transparent;
+    }
+
+    .form__field:placeholder-shown ~ .form__label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+    }
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+}
+
+    .form__field:focus ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: #11998e;
+        font-weight: 700;
+    }
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+
+/*Buton*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    position: relative;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: absolute;
+    overflow: hidden;
+}
+
+    .btn:hover {
+        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        color: #060202;
+    }
+
+    .btn:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( 120deg, transparent, rgba(146, 148, 248, 0.4), transparent );
+        transition: all 650ms;
+        
+    }
+
+    .btn:hover:before {
+        left: 100%;
+        
+    }
+
+
+.btnEkle {
+    padding: 1.3rem 3.6rem;
+    opacity: 0;
+}
+
+/*Resim Yüklemek İçin*/
+
+.imageBox .text {
+    border: 2px solid #64b229;
+    font: 20px bold;
+    display: inline-block;
+    width: max-content;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 5px;
+    color: #26b418;
+    border-radius: 15px;
+}
+
+    .imageBox .text:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        color: #62b859;
+        border: 2px solid #75ad56;
+    }
+
+.fileUpload {
+    display: none;
+}
+
+
+/*Takvim*/
+
+.takvimBox {
+    position: relative;
+    margin-top: 10px;
+    width: max-content;
+    border: 0px solid blue;
+    font-size: 1.3rem;
+    padding:15px 0 0 ;
+}
+.takvimBox:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    color: #62b859;
+}
+
+.takvim {
+    height: 600px; 
+}
+
+.mesaj {
+    display:block !important;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin:0 auto !important;
+    width:max-content;
+    padding-bottom:15px;
+    color:#5ad752
+}
+
+    .mesaj:hover {
+        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        color: #62b859;
+    }

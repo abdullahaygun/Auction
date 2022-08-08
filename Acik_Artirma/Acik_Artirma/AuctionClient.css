@@ -1,0 +1,297 @@
+﻿*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media (max-width: 56.25em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
+
+body {
+    background-color: #b6ba17;
+}
+
+.content{
+    height:100%;
+}
+
+.artboard {
+    display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    height: 100%;
+    position: relative;
+    margin-top: 0px !important;
+}
+
+@media (max-width: 37.5em) {
+    .artboard {
+        padding: 1rem;
+    }
+}
+
+.card {
+    flex: initial;
+    position: relative;
+    height: 45rem;
+    width: 53rem;
+    -moz-perspective: 200rem;
+    perspective: 200rem;
+    margin: 3rem;
+}
+
+.card__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+}
+
+.card__side--front {
+    /* background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);*/
+    background-color:#59576d;
+}
+
+.card__side--back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+}
+
+.card:hover .card__side--back {
+    transform: rotateY(0);
+    height: max-content !important;
+}
+
+.card:hover .card__side--front {
+    transform: rotateY(-180deg);
+}
+
+.card__theme {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+/*.card__theme-box {
+    color: #fff;
+    margin-bottom: 9rem;
+}*/
+
+.card__theme-box {
+    color: #fff;
+    position: relative !important;
+    width: 100% !important;
+}
+
+    .card__theme-box:nth-child(1) img {
+        margin-top: -20px !important;
+    }
+
+.card__title {
+    margin-top: 10px !important;
+}
+
+.card__subject {
+    margin-top: 50px !important;
+}
+
+.sagOn {
+    margin-bottom: -30px !important;
+    margin-right: 10px !important;
+}
+
+.solOn {
+    margin-bottom: -30px !important;
+    margin-left: 10px !important;
+}
+
+.card__subject {
+    font-family: "Inconsolata", monospace;
+    letter-spacing: 0.4rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.card__title {
+    font-family: "VT323", monospace;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.card__cover {
+    position: relative;
+    background-size: cover;
+    height: 17rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    /*background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);*/
+    background-color: #59576d;
+}
+
+.card__heading {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+
+.card__heading-span {
+    font-family: "VT323", monospace;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    color: #fff;
+}
+
+.card__details {
+    font-family: "Inconsolata", monospace;
+    padding: 2rem 2rem;
+}
+
+    .card__details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+        .card__details ul li {
+            text-align: center;
+            font-size: 1.8rem;
+            padding: 1rem;
+        }
+
+            .card__details ul li:not(:last-child) {
+                border-bottom: 1px solid #eee;
+            }
+
+@media only screen and (max-width: 37.5em), only screen and (hover: none) {
+    .card {
+        height: auto;
+        border-radius: 3px;
+        background-color: #fff;
+        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+    }
+
+    .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .card__side--front {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .card__side--back {
+        transform: rotateY(0);
+    }
+
+    .card:hover .card__side--front {
+        transform: rotateY(0);
+    }
+
+    .card__details {
+        padding: 3rem 2rem;
+    }
+
+    .card__theme {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 5rem 4rem 1.5rem 4rem;
+        text-align: right;
+    }
+
+    .card__theme-box {
+        margin-bottom: 1.5rem;
+    }
+
+    .card__title {
+        font-size: 4rem;
+    }
+}
+
+.resimler {
+    width: 60% !important;
+    height: 60% !important;
+    position: relative !important;
+    margin: 0 auto;
+}
+
+.resim {
+    width: 65% !important;
+    height: 65% !important;
+}
+
+.sagOn {
+    position: absolute !important;
+    bottom: -30px !important;
+    right: 0 !important;
+}
+
+
+.solOn {
+    position: absolute !important;
+    bottom: -30px !important;
+    left: 0px !important;
+}
+
+.resimlerarka {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+
+.resimArka {
+    width: 20% !important;
+    height: 20% !important;
+    margin: 0px auto !important;
+}
+
+.sonTeklif {
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 300%
+}
+
